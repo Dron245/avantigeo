@@ -1,0 +1,902 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="assets/img/favicon.ico">
+		<title>
+			Бурение скважин на воду в Москве и Московской области по ценам компании AvantiGeo
+		</title>
+		<script type="module" crossorigin="" src="./js/index.min.js?v=1794933217022"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1794933217022">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header data-fls-header="" class="header">
+				<div class="header__container">
+					<!-- <include src="@components/layout/menu/menu.html" locals='{"active":"Home"}'></include> -->
+				</div>
+			</header>
+			<main class="page">
+				<div data-fls-index="" class="index">
+					<section class="block main-block">
+						<div class="main-block__container">
+							<div class="main-block__body">
+								<h1 class="main-block__title title">БУРЕНИЕ СКВАЖИН</h1>
+								<a href="/" class="main-block__link link link_max">Поговорить с инженером</a>
+								<div class="block__content content-block">
+									<p class="content-block__text">
+										Укажите населённый пункт — покажем ориентировочную глубину, варианты скважины и стоимость
+									</p>
+									<form id="location" class="content-block__form form" action="">
+										<input class="form__input" type="text" name="location" placeholder="Введите населённый пункт или адрес">
+										<button class="form__button link" type="submit">Рассчитать по участку</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="block main-region">
+						<div class="main-region__container">
+							<div class="main-region__body">
+								<h1 class="main-region__title title">Бурение скважин в Одинцовском районе</h1>
+								<p class="main-region__text">
+									Чистая вода для дома и участка. Точные глубины. Фиксированные цены. Работаем по всей Московской области.
+								</p>
+								<div class="main-region__advantages advantages-main">
+									<div class="advantages-main__item">
+										<div class="advantages-main__icon">
+											<img src="./assets/img/main-region/vyezd.svg" alt="Бесплатный выезд">
+										</div>
+										<p class="advantages-main__text">Бесплатный выезд</p>
+									</div>
+									<div class="advantages-main__item">
+										<div class="advantages-main__icon">
+											<img src="./assets/img/main-region/work-dogovor.svg" alt="Работаем по договору">
+										</div>
+										<p class="advantages-main__text">Работаем по договору</p>
+									</div>
+									<div class="advantages-main__item">
+										<div class="advantages-main__icon">
+											<img src="./assets/img/main-region/garantiya.svg" alt="Гарантия качества">
+										</div>
+										<p class="advantages-main__text">Гарантия качества</p>
+									</div>
+									<div class="advantages-main__item">
+										<div class="advantages-main__icon">
+											<img src="./assets/img/main-region/svoiingenery.svg" alt="Свои инженеры">
+										</div>
+										<p class="advantages-main__text">Свои инженеры</p>
+									</div>
+								</div>
+								<div class="block__content content-block">
+									<div class="content-block__specifications specifications-main">
+										<div class="specifications-main__item">
+											<div class="specifications-main__img">
+												<img src="./assets/img/main-region/glubina.svg" alt="Глубина">
+											</div>
+											<div class="specifications-main__group">
+												<p class="specifications-main__title">Глубина</p>
+												<p class="specifications-main__text">40-70 м</p>
+											</div>
+										</div>
+										<div class="specifications-main__item">
+											<div class="specifications-main__img">
+												<img src="./assets/img/main-region/stoimost.svg" alt="Стоимость">
+											</div>
+											<div class="specifications-main__group">
+												<p class="specifications-main__title">Стоимость:</p>
+												<p class="specifications-main__text">от 140 000 ₽</p>
+											</div>
+										</div>
+										<div class="specifications-main__item">
+											<div class="specifications-main__img">
+												<img src="./assets/img/main-region/cenazametr.svg" alt="Цена за метр">
+											</div>
+											<div class="specifications-main__group">
+												<p class="specifications-main__title">Цена за метр:</p>
+												<p class="specifications-main__text">от 2 800 ₽</p>
+											</div>
+										</div>
+									</div>
+									<form class="content-block__form form" action="">
+										<input class="form__input" type="text" name="location" placeholder="Введите населённый пункт или адрес">
+										<button class="form__button link" type="submit">Рассчитать по участку</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="calculation">
+						<div class="calculation__container">
+							<div data-fls-dynamic=".content-calculation__text-data, 980, 0" class="calculation__img">
+								<picture>
+									<source media="(max-width: 600px)" srcset="./assets/img/calculation/calculation-600.webp" type="image/webp">
+									<source media="(max-width: 1200px)" srcset="./assets/img/calculation/calculation-1200.webp" type="image/webp">
+									<img alt="Расчёт стоимости скважины" src="./assets/img/calculation/calculation.webp">
+								</picture>
+							</div>
+							<div class="calculation__content content-calculation">
+								<!-- ЭКРАН 1: НАЧАЛО РАСЧЁТА -->
+								<div class="content-calculation__step content-calculation__step_one" data-step-panel="1" aria-labelledby="calculation-title">
+									<!-- Заголовок и описание первого экрана -->
+									<div class="content-calculation__text-data">
+										<div class="content-calculation__text-body">
+											<h2 id="calculation-title" class="content-calculation__title title">Рассчитать скважину для моего участка</h2>
+											<p class="content-calculation__text">
+												Укажите населённый пункт — покажем ориентировочную глубину, варианты скважины и стоимость
+											</p>
+										</div>
+									</div>
+									<!-- Индикатор этапов -->
+									<ol class="content-calculation__steps steps-calculation">
+										<li class="link link_mini steps-calculation__item steps-calculation__item_active" data-step-indicator="1" aria-current="step">
+											<span class="steps-calculation__text">
+												ШАГ 1
+												<span>: Начало расчёта</span>
+											</span>
+										</li>
+										<li class="link link_mini steps-calculation__item" data-step-indicator="2">
+											<span class="steps-calculation__text">
+												ШАГ 2
+												<span>: Результат расчёта</span>
+											</span>
+										</li>
+									</ol>
+									<!-- Форма ввода адреса -->
+									<form id="location-calculation" class="form-calculation">
+										<input id="location-input" class="form-calculation__input form__input" type="text" name="location" placeholder="Введите населённый пункт или адрес" autocomplete="off" required>
+										<button class="form-calculation__button link" type="submit">Показать результат</button>
+									</form>
+									<!-- Преимущества -->
+									<div class="content-calculation__advantages specifications-main advantages-calculation">
+										<div class="specifications-main__item">
+											<img class="advantages-calculation__img" src="./assets/img/calculation/no-phone.svg" alt="Без телефона">
+											<p class="advantages-calculation__text">Без телефона на первом шаге</p>
+										</div>
+										<div class="specifications-main__item">
+											<img class="advantages-calculation__img" src="./assets/img/calculation/quick-calculation.svg" alt="Быстрый расчёт">
+											<p class="advantages-calculation__text">Быстрый расчёт за 1 минуту</p>
+										</div>
+										<div class="specifications-main__item">
+											<img class="advantages-calculation__img" src="./assets/img/calculation/actual-data.svg" alt="Актуальные данные">
+											<p class="advantages-calculation__text">Актуальные данные по вашему району</p>
+										</div>
+									</div>
+								</div>
+								<!-- ЭКРАН 2: РЕЗУЛЬТАТ РАСЧЁТА -->
+								<div class="content-calculation__step content-calculation__step_two" data-step-panel="2" aria-labelledby="calculation-result-title" hidden>
+									<div data-fls-dynamic=".content-calculation__top, 980, 0" class="calculation__img">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/calculation/calculation-600.webp" type="image/webp">
+											<source media="(max-width: 1200px)" srcset="./assets/img/calculation/calculation-1200.webp" type="image/webp">
+											<img alt="Расчёт стоимости скважины" src="./assets/img/calculation/calculation.webp">
+										</picture>
+									</div>
+									<div class="content-calculation__top">
+										<div class="content-calculation__body">
+											<!-- Заголовок второго экрана -->
+											<div class="content-calculation__text">
+												<h2 id="calculation-result-title" class="content-calculation__title title">Результат расчёта</h2>
+											</div>
+											<!-- Индикатор этапов -->
+											<ol class="content-calculation__steps steps-calculation">
+												<li class="link link_mini steps-calculation__item" data-step-indicator="1">
+													<span class="steps-calculation__text">
+														ШАГ 1
+														<span>: Начало расчёта</span>
+													</span>
+												</li>
+												<li class="link link_mini steps-calculation__item steps-calculation__item_active" data-step-indicator="2" aria-current="step">
+													<span class="steps-calculation__text">
+														ШАГ 2
+														<span>: Результат расчёта</span>
+													</span>
+												</li>
+											</ol>
+										</div>
+									</div>
+									<!-- Адрес и возможность его изменить -->
+									<div class="form-calculation form-calculation_result">
+										<input id="result-location" class="form-calculation__input form__input" type="text" value="Московская область, село Ивановка" aria-label="Населённый пункт для расчёта" readonly data-result-location="">
+										<button class="form-calculation__button form-calculation__button_change" type="button" data-edit-location="">Изменить</button>
+									</div>
+									<!-- Основные характеристики -->
+									<div class="content-block__specifications specifications-main">
+										<div class="specifications-main__item">
+											<div class="specifications-main__img">
+												<img src="./assets/img/main-region/glubina.svg" alt="Глубина">
+											</div>
+											<div class="specifications-main__group">
+												<p class="specifications-main__title">Глубина</p>
+												<p class="specifications-main__text">40–70 м</p>
+											</div>
+										</div>
+										<div class="specifications-main__item">
+											<div class="specifications-main__img">
+												<img src="./assets/img/main-region/stoimost.svg" alt="Стоимость">
+											</div>
+											<div class="specifications-main__group">
+												<p class="specifications-main__title">Стоимость:</p>
+												<p class="specifications-main__text">от 140 000 ₽</p>
+											</div>
+										</div>
+										<div class="specifications-main__item">
+											<div class="specifications-main__img">
+												<img src="./assets/img/main-region/cenazametr.svg" alt="Цена за метр">
+											</div>
+											<div class="specifications-main__group">
+												<p class="specifications-main__title">Цена за метр:</p>
+												<p class="specifications-main__text">от 2 800 ₽</p>
+											</div>
+										</div>
+									</div>
+									<!-- Варианты конструкции -->
+									<div class="content-calculation__variants variants-calculation">
+										<h3 class="content-calculation__title title">Доступные варианты конструкции</h3>
+										<div class="variants-calculation__items">
+											<a href="/" class="variants-calculation__item">
+												<picture>
+													<img alt="Вариант 1" src="./assets/img/calculation/dostup1.webp">
+												</picture>
+												<p class="variants-calculation__text">Только бурение</p>
+											</a>
+											<a href="/" class="variants-calculation__item">
+												<picture>
+													<img alt="Вариант 2" src="./assets/img/calculation/dostup2.webp">
+												</picture>
+												<p class="variants-calculation__text">Бурение артезианской скважины</p>
+											</a>
+											<a href="/" class="variants-calculation__item">
+												<picture>
+													<img alt="Вариант 3" src="./assets/img/calculation/dostup3.webp">
+												</picture>
+												<p class="variants-calculation__text">Бурение + адаптер</p>
+											</a>
+											<a href="/" class="variants-calculation__item">
+												<picture>
+													<img alt="Вариант 4" src="./assets/img/calculation/dostup4.webp">
+												</picture>
+												<p class="variants-calculation__text">Бурение + кессон</p>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="complictations">
+						<div class="complictations__container">
+							<h2 class="complictations__title subtitle">Выберите подходящую комплектацию</h2>
+							<p class="complictations__text">Стоимость рассчитана ориентировочно</p>
+							<div class="complictations__items">
+								<article class="complictations__item item-complictations">
+									<div class="item-complictations__label link">популярный</div>
+									<div class="item-complictations__top">
+										<h3 class="item-complictations__title title">Только бурение</h3>
+										<p class="item-complictations__price">Стоимость рассчитана ориентировочно</p>
+									</div>
+									<div class="item-complictations__img">
+										<picture>
+											<img alt="Только бурение" src="./assets/img/calculation/dostup1.webp">
+										</picture>
+									</div>
+									<div class="item-complictations__costs">
+										<div class="item-complictations__cost">от 140 000 ₽</div>
+										<div class="item-complictations__costpermetr">от 2 300 ₽/м</div>
+									</div>
+									<ul class="item-complictations__list">
+										<li class="item-complictations__item">Бурение скважины</li>
+										<li class="item-complictations__item">Обсадная труба</li>
+										<li class="item-complictations__item">Прокачка и прокачка</li>
+									</ul>
+									<a href="/" class="item-complictations__button link">Выбрать</a>
+								</article>
+								<article class="complictations__item item-complictations item-complictations_popular">
+									<div class="item-complictations__label link">популярный</div>
+									<div class="item-complictations__top">
+										<h3 class="item-complictations__title title">Артезианская скважина</h3>
+										<p class="item-complictations__price">Надёжное решение для постоянного водоснабжения</p>
+									</div>
+									<div class="item-complictations__img">
+										<picture>
+											<img alt="Артезианская скважина" src="./assets/img/calculation/dostup2.webp">
+										</picture>
+									</div>
+									<div class="item-complictations__costs">
+										<div class="item-complictations__cost">от 170 000 ₽</div>
+										<div class="item-complictations__costpermetr">от 3 200 ₽/м</div>
+									</div>
+									<ul class="item-complictations__list">
+										<li class="item-complictations__item">Бурение скважины</li>
+										<li class="item-complictations__item">Обсадная труба</li>
+										<li class="item-complictations__item">Прокачка и прокачка</li>
+										<li class="item-complictations__item">Паспорт скважины</li>
+									</ul>
+									<a href="/" class="item-complictations__button link">Выбрать</a>
+								</article>
+								<article class="complictations__item item-complictations">
+									<div class="item-complictations__label link">популярный</div>
+									<div class="item-complictations__top">
+										<h3 class="item-complictations__title title">Бурение + адаптер</h3>
+										<p class="item-complictations__price">Удобный ввод воды в дом без кессона</p>
+									</div>
+									<div class="item-complictations__img">
+										<picture>
+											<img alt="Бурение + адаптер" src="./assets/img/calculation/dostup3.webp">
+										</picture>
+									</div>
+									<div class="item-complictations__costs">
+										<div class="item-complictations__cost">от 190 000 ₽</div>
+										<div class="item-complictations__costpermetr">от 3 400 ₽/м</div>
+									</div>
+									<ul class="item-complictations__list">
+										<li class="item-complictations__item">Бурение скважины</li>
+										<li class="item-complictations__item">Обсадная труба</li>
+										<li class="item-complictations__item">Адаптер</li>
+										<li class="item-complictations__item">Промывка и прокачка</li>
+									</ul>
+									<a href="/" class="item-complictations__button link">Выбрать</a>
+								</article>
+								<article class="complictations__item item-complictations">
+									<div class="item-complictations__label link">популярный</div>
+									<div class="item-complictations__top">
+										<h3 class="item-complictations__title title">Бурение + кессон</h3>
+										<p class="item-complictations__price">Максимальный комфорт и защита оборудования</p>
+									</div>
+									<div class="item-complictations__img">
+										<picture>
+											<img alt="Бурение + кессон" src="./assets/img/calculation/dostup4.webp">
+										</picture>
+									</div>
+									<div class="item-complictations__costs">
+										<div class="item-complictations__cost">от 250 000 ₽</div>
+										<div class="item-complictations__costpermetr">от 4 400 ₽/м</div>
+									</div>
+									<ul class="item-complictations__list">
+										<li class="item-complictations__item">Бурение скважины</li>
+										<li class="item-complictations__item">Обсадная труба</li>
+										<li class="item-complictations__item">Кессон</li>
+										<li class="item-complictations__item">Монтаж оборудования</li>
+									</ul>
+									<a href="/" class="item-complictations__button link">Выбрать</a>
+								</article>
+							</div>
+						</div>
+					</section>
+					<section class="works">
+						<div class="works__container">
+							<div class="works__top">
+								<h2 class="works__title subtitle">Наши работы в Одинцовском районе</h2>
+								<div class="works__control-slider">
+									<button class="works__button works__button_prev">
+										<img src="./assets/img/works/arrow-next.svg" alt="назад">
+									</button>
+									<button class="works__button works__button_next">
+										<img src="./assets/img/works/arrow-next.svg" alt="вперед">
+									</button>
+								</div>
+							</div>
+							<div data-fls-slider="" class="works__slider swiper">
+								<div class="works__wrapper swiper-wrapper">
+									<div class="works__slide work swiper-slide">
+										<div class="work__img">
+											<picture>
+												<source media="(max-width: 600px)" srcset="./assets/img/works/work1-600.webp" type="image/webp">
+												<img alt="Работа1" src="./assets/img/works/work1.webp">
+											</picture>
+											<div class="work__text-block">
+												<span class="work__text">д. Лапино</span>
+												<span class="work__subtext">Базовое решение</span>
+											</div>
+										</div>
+										<div class="work__content">
+											<ul class="work__list">
+												<li class="work__specification">
+													<span class="work__specification-name">Глубина</span>
+													<span class="work__specification-value">6 м</span>
+												</li>
+												<li class="work__specification">
+													<span class="work__specification-name">Тип</span>
+													<span class="work__specification-value">артезианская</span>
+												</li>
+												<li class="work__specification">
+													<span class="work__specification-name">Монтаж</span>
+													<span class="work__specification-value">кессон</span>
+												</li>
+												<li class="work__specification">
+													<span class="work__specification-name">Дата</span>
+													<span class="work__specification-value">2024</span>
+												</li>
+											</ul>
+											<div class="item-complictations__cost">от 182 000 ₽</div>
+										</div>
+									</div>
+									<div class="works__slide work swiper-slide">
+										<div class="work__img">
+											<picture>
+												<source media="(max-width: 600px)" srcset="./assets/img/works/work2-600.webp" type="image/webp">
+												<img alt="Работа1" src="./assets/img/works/work2.webp">
+											</picture>
+											<div class="work__text-block">
+												<span class="work__text">д. Лапино</span>
+												<span class="work__subtext">Базовое решение</span>
+											</div>
+										</div>
+										<div class="work__content">
+											<ul class="work__list">
+												<li class="work__specification">
+													<span class="work__specification-name">Глубина</span>
+													<span class="work__specification-value">6 м</span>
+												</li>
+												<li class="work__specification">
+													<span class="work__specification-name">Тип</span>
+													<span class="work__specification-value">артезианская</span>
+												</li>
+												<li class="work__specification">
+													<span class="work__specification-name">Монтаж</span>
+													<span class="work__specification-value">кессон</span>
+												</li>
+												<li class="work__specification">
+													<span class="work__specification-name">Дата</span>
+													<span class="work__specification-value">2024</span>
+												</li>
+											</ul>
+											<div class="item-complictations__cost">от 182 000 ₽</div>
+										</div>
+									</div>
+									<div class="works__slide work swiper-slide">
+										<div class="work__img">
+											<picture>
+												<source media="(max-width: 600px)" srcset="./assets/img/works/work3-600.webp" type="image/webp">
+												<img alt="Работа1" src="./assets/img/works/work3.webp">
+											</picture>
+											<div class="work__text-block">
+												<span class="work__text">д. Лапино</span>
+												<span class="work__subtext">Базовое решение</span>
+											</div>
+										</div>
+										<div class="work__content">
+											<ul class="work__list">
+												<li class="work__specification">
+													<span class="work__specification-name">Глубина</span>
+													<span class="work__specification-value">6 м</span>
+												</li>
+												<li class="work__specification">
+													<span class="work__specification-name">Тип</span>
+													<span class="work__specification-value">артезианская</span>
+												</li>
+												<li class="work__specification">
+													<span class="work__specification-name">Монтаж</span>
+													<span class="work__specification-value">кессон</span>
+												</li>
+												<li class="work__specification">
+													<span class="work__specification-name">Дата</span>
+													<span class="work__specification-value">2024</span>
+												</li>
+											</ul>
+											<div class="item-complictations__cost">от 182 000 ₽</div>
+										</div>
+									</div>
+									<div class="works__slide work swiper-slide">
+										<div class="work__img">
+											<picture>
+												<source media="(max-width: 600px)" srcset="./assets/img/works/work2-600.webp" type="image/webp">
+												<img alt="Работа1" src="./assets/img/works/work2.webp">
+											</picture>
+											<div class="work__text-block">
+												<span class="work__text">д. Лапино</span>
+												<span class="work__subtext">Базовое решение</span>
+											</div>
+										</div>
+										<div class="work__content">
+											<ul class="work__list">
+												<li class="work__specification">
+													<span class="work__specification-name">Глубина</span>
+													<span class="work__specification-value">6 м</span>
+												</li>
+												<li class="work__specification">
+													<span class="work__specification-name">Тип</span>
+													<span class="work__specification-value">артезианская</span>
+												</li>
+												<li class="work__specification">
+													<span class="work__specification-name">Монтаж</span>
+													<span class="work__specification-value">кессон</span>
+												</li>
+												<li class="work__specification">
+													<span class="work__specification-name">Дата</span>
+													<span class="work__specification-value">2024</span>
+												</li>
+											</ul>
+											<div class="item-complictations__cost">от 182 000 ₽</div>
+										</div>
+									</div>
+									<div class="works__slide work swiper-slide">
+										<div class="work__img">
+											<picture>
+												<source media="(max-width: 600px)" srcset="./assets/img/works/work3-600.webp" type="image/webp">
+												<img alt="Работа1" src="./assets/img/works/work3.webp">
+											</picture>
+											<div class="work__text-block">
+												<span class="work__text">д. Лапино</span>
+												<span class="work__subtext">Базовое решение</span>
+											</div>
+										</div>
+										<div class="work__content">
+											<ul class="work__list">
+												<li class="work__specification">
+													<span class="work__specification-name">Глубина</span>
+													<span class="work__specification-value">6 м</span>
+												</li>
+												<li class="work__specification">
+													<span class="work__specification-name">Тип</span>
+													<span class="work__specification-value">артезианская</span>
+												</li>
+												<li class="work__specification">
+													<span class="work__specification-name">Монтаж</span>
+													<span class="work__specification-value">кессон</span>
+												</li>
+												<li class="work__specification">
+													<span class="work__specification-name">Дата</span>
+													<span class="work__specification-value">2024</span>
+												</li>
+											</ul>
+											<div class="item-complictations__cost">от 182 000 ₽</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="block main-region main-bur">
+						<div class="main-region__container">
+							<div class="main-region__body">
+								<h1 class="main-region__title title">Скважина 30 метров</h1>
+								<p class="main-region__text">Оптимальное решение для дома. Подходит для районов Московской области.</p>
+								<div class="main-region__advantages advantages-main">
+									<div class="advantages-main__item">
+										<div class="advantages-main__icon">
+											<img src="./assets/img/main-bur/check.svg" alt="Стабильный дебет">
+										</div>
+										<p class="advantages-main__text">Стабильный дебет</p>
+									</div>
+									<div class="advantages-main__item">
+										<div class="advantages-main__icon">
+											<img src="./assets/img/main-bur/check.svg" alt="Подходит для дома и полива">
+										</div>
+										<p class="advantages-main__text">Подходит для дома и полива</p>
+									</div>
+									<div class="advantages-main__item">
+										<div class="advantages-main__icon">
+											<img src="./assets/img/main-bur/check.svg" alt="Нетская вода">
+										</div>
+										<p class="advantages-main__text">Нетская вода</p>
+									</div>
+								</div>
+								<div class="main-bur__bottom">
+									<a href="/" class="main-bur__link link link_max">Получить расчёт для моего участка</a>
+									<div class="main-bur__costs">
+										<div class="main-bur__costs-item">
+											<div class="main-bur__costs-title">Стоимость:</div>
+											<div class="main-bur__costs-value">от 140 000 ₽</div>
+										</div>
+										<div class="main-bur__costs-item">
+											<div class="main-bur__costs-title">Цена за метр:</div>
+											<div class="main-bur__costs-value">от 2 800 ₽</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section style="display: none;" class="options-section">
+						<div class="options-section__container">
+							<div class="options-section__items">
+								<article class="options-section__item option">
+									<div class="option__content">
+										<h3 class="option__title subtitle">Узнайте точную стоимость для вашего участка</h3>
+										<p class="option__text">Оптимальное решение для частного дома, глубины, варианты и расчёты сметы</p>
+										<button class="option__link link">Рассчитать по участку</button>
+									</div>
+									<div class="option__img">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/options/option1-600.webp" type="image/webp">
+											<img alt="Рассчитать по участку" src="./assets/img/options/option1.webp">
+										</picture>
+									</div>
+								</article>
+								<article class="options-section__item option">
+									<div class="option__content">
+										<h3 class="option__title subtitle">Нужна консультация инженера?</h3>
+										<p class="option__text">Подберём оптимальное решение для вашего участка</p>
+										<a href="/" class="option__link link">Поговорить с инженером</a>
+									</div>
+									<div class="option__img">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/options/option2-600.webp" type="image/webp">
+											<img alt="Нужна консультация инженера?" src="./assets/img/options/option2.webp">
+										</picture>
+									</div>
+								</article>
+								<article class="options-section__item option">
+									<div class="option__content">
+										<h3 class="option__title subtitle">Остались вопросы по оборудованию?</h3>
+										<p class="option__text">Подберём комплектацию под ваш бюджет и условия участка</p>
+										<a href="/" class="option__link link">Получить консультацию</a>
+									</div>
+									<div class="option__img">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/options/option3-600.webp" type="image/webp">
+											<img alt="Получить консультацию" src="./assets/img/options/option3.webp">
+										</picture>
+									</div>
+								</article>
+								<article class="options-section__item option">
+									<div class="option__content">
+										<h3 class="option__title subtitle">Готовы получить точную смету?</h3>
+										<p class="option__text">Оставьте заявку — инженер свяжется с вами в течение 15 минут</p>
+										<a href="/" class="option__link link">Получить точную смету</a>
+									</div>
+									<div class="option__img">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/options/option4-600.webp" type="image/webp">
+											<img alt="Получить точную смету" src="./assets/img/options/option4.webp">
+										</picture>
+									</div>
+								</article>
+							</div>
+						</div>
+					</section>
+					<section>
+						<div class="block__content content-block popup-smeta popup-form">
+							<h3 class="popup-smeta__title subtitle subtitle_mini">Получите точную смету и срок выполнения работ</h3>
+							<div class="content-block__specifications specifications-main">
+								<div class="specifications-main__item">
+									<div class="specifications-main__img">
+										<img src="./assets/img/main-bur/check.svg" alt="Регион">
+									</div>
+									<div class="specifications-main__group">
+										<p class="specifications-main__title">Регион</p>
+										<p class="specifications-main__text">Московская область, Одинцовский район</p>
+									</div>
+								</div>
+								<div class="specifications-main__item">
+									<div class="specifications-main__img">
+										<img src="./assets/img/main-bur/check.svg" alt="Глубина">
+									</div>
+									<div class="specifications-main__group">
+										<p class="specifications-main__title">Глубина</p>
+										<p class="specifications-main__text">40-70 м</p>
+									</div>
+								</div>
+								<div class="specifications-main__item">
+									<div class="specifications-main__img">
+										<img src="./assets/img/main-bur/check.svg" alt="Выбранная комплектация">
+									</div>
+									<div class="specifications-main__group">
+										<p class="specifications-main__title">Выбранная комплектация:</p>
+										<p class="specifications-main__text">Бурение + кессон</p>
+									</div>
+								</div>
+								<div class="specifications-main__item">
+									<div class="specifications-main__img">
+										<img src="./assets/img/main-bur/check.svg" alt="Стоимость">
+									</div>
+									<div class="specifications-main__group">
+										<p class="specifications-main__title">Стоимость:</p>
+										<p class="specifications-main__text">от 140 000 ₽</p>
+									</div>
+								</div>
+							</div>
+							<form id="form-smeta" class="content-block__form form" action="" method="post">
+								<!-- Поля ввода -->
+								<div class="popup-smeta__inputs">
+									<input class="form__input" id="smeta-name" type="text" name="name" placeholder="Ваше имя" autocomplete="name" aria-label="Ваше имя">
+									<input class="form__input" id="smeta-phone" type="tel" name="phone" placeholder="Ваш телефон" autocomplete="tel" aria-label="Ваш телефон" required>
+								</div>
+								<!-- Способ связи -->
+								<fieldset class="form__option-item">
+									<div data-fls-radio="" class="options">
+										<label class="options__item">
+											<input class="options__input" type="radio" value="call" name="option">
+											<span class="options__text">Позвонить</span>
+										</label>
+										<label class="options__item">
+											<input class="options__input" type="radio" value="whatsapp" name="option" checked>
+											<span class="options__text">Написать в WhatsApp</span>
+										</label>
+									</div>
+								</fieldset>
+								<!-- Скрытые данные расчёта -->
+								<input type="hidden" name="region" value="Московская область, Одинцовский район">
+								<input type="hidden" name="depth" value="40–70 м">
+								<input type="hidden" name="configuration" value="Бурение + кессон">
+								<input type="hidden" name="cost" value="от 140 000 ₽">
+								<!-- Кнопка и согласие -->
+								<div class="form__bottom">
+									<button class="form__button link" type="submit">Получить точную смету и срок работ</button>
+									<label data-fls-checkbox="" class="checkbox">
+										<input checked class="checkbox__input" type="checkbox" value="1" name="privacy" required>
+										<span class="checkbox__text">
+											<span class="checkbox__text-inner">
+												Я ознакомился и принимаю условия
+												<a class="form__text checkbox__link" href="/" target="_blank">Политики конфиденциальности</a>
+											</span>
+										</span>
+									</label>
+								</div>
+							</form>
+						</div>
+					</section>
+					<section>
+						<div class="block__content content-block popup-parameters popup-form">
+							<div class="popup__close">
+								<svg width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M0.75 0.75L8.74779 8.75008M8.74779 8.75008L16.7452 16.7497M8.74779 8.75008L16.7456 0.75M8.74779 8.75008L0.750421 16.7497" stroke-width="1.5" stroke-linecap="round" stroke="#13A9F4"></path>
+								</svg>
+							</div>
+							<h3 class="popup-parameters__title subtitle subtitle_mini">Проверьте данные и отправьте заявку</h3>
+							<form id="form-parameters" class="content-block__form" action="" method="post">
+								<div class="popup-parameters__column">
+									<h4 class="popup-parameters__subtitle subtitle">Ваши параметры</h4>
+									<div class="popup-parameters__item">
+										<p class="specifications-main__title">Регион</p>
+										<p class="specifications-main__text">Московская область, Одинцовский район</p>
+									</div>
+									<div class="popup-parameters__item">
+										<p class="specifications-main__title">Глубина</p>
+										<p class="specifications-main__text">40–70 м</p>
+									</div>
+									<div class="popup-parameters__item">
+										<p class="specifications-main__title">Конфигурация</p>
+										<p class="specifications-main__text">Бурение + кессон</p>
+									</div>
+									<div class="popup-parameters__item">
+										<p class="specifications-main__title">Стоимость</p>
+										<p class="specifications-main__text">от 140 000 ₽</p>
+									</div>
+								</div>
+								<div class="popup-parameters__column">
+									<div class="popup-parameters__block">
+										<h4 class="popup-parameters__subtitle subtitle">Что будет дальше?</h4>
+										<ol class="popup-parameters__list">
+											<li class="popup-parameters__item">Инженер свяжется с вами в течение 15 минут</li>
+											<li class="popup-parameters__item">Уточнит детали участка и подберёт оптимальное решение</li>
+											<li class="popup-parameters__item">Подготовим точную смету и сроки выполнения работ</li>
+										</ol>
+									</div>
+									<button class="popup-parameters__button link link_w100" type="submit">Рассчитать стоимость</button>
+								</div>
+							</form>
+						</div>
+					</section>
+					<section>
+						<div class="block__content content-block popup-success popup-form">
+							<div class="popup__close">
+								<svg width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M0.75 0.75L8.74779 8.75008M8.74779 8.75008L16.7452 16.7497M8.74779 8.75008L16.7456 0.75M8.74779 8.75008L0.750421 16.7497" stroke-width="1.5" stroke-linecap="round" stroke="#13A9F4"></path>
+								</svg>
+							</div>
+							<h3 class="popup-success__title subtitle subtitle_mini">Заявка отправлена</h3>
+							<p class="popup-success__text">
+								Инженер свяжется с вами в течение 15 минут и уточнит детали для подготовки точной
+							</p>
+						</div>
+					</section>
+					<section>
+						<div class="block__content content-block popup-engineer popup-form">
+							<div class="popup-engineer__block">
+								<h3 class="popup-smeta__title subtitle subtitle_mini">Поговорить с инженером</h3>
+								<form id="form-engineer" class="content-block__form form" action="" method="post">
+									<!-- Поля ввода -->
+									<div class="popup-smeta__inputs">
+										<input class="form__input" id="engineer-name" type="text" name="name" placeholder="Имя" autocomplete="name" aria-label="Ваше имя">
+										<input class="form__input" id="engineer-phone" type="tel" name="phone" placeholder="Телефон" autocomplete="tel" aria-label="Телефон" required>
+									</div>
+									<!-- Кнопка и согласие -->
+									<button class="form__button link link_w100" type="submit">Получить консультацию</button>
+									<label data-fls-checkbox="" class="checkbox">
+										<input checked class="checkbox__input" type="checkbox" value="1" name="privacy" required>
+										<span class="checkbox__text">
+											<span class="checkbox__text-inner">
+												Я ознакомился и принимаю условия
+												<a class="form__text checkbox__link" href="/" target="_blank">Политики конфиденциальности</a>
+											</span>
+										</span>
+									</label>
+								</form>
+							</div>
+							<div class="popup-engineer__block popup-engineer__block_right">
+								<h4 class="popup-parameters__subtitle subtitle">Что будет дальше?</h4>
+								<ul class="popup-engineer__list">
+									<li>без предоплаты</li>
+									<li>договор</li>
+									<li>гарантия</li>
+									<li>собственная техника</li>
+									<li>ссылка на документы</li>
+									<li>1–2 релевантных кейса</li>
+								</ul>
+								<a class="popup-engineer__link link link_mini" href="/">Посмотреть документы</a>
+							</div>
+						</div>
+					</section>
+					<section class="buttons">
+						<div class="buttons__container">
+							<a href="/" class="buttons__button link" type="submit">
+								<img src="./assets/img/buttons/grid.svg" alt="">
+								Рассчитать
+							</a>
+							<a href="tel: +7 (000) 000-00-00" class="buttons__button link" type="submit">
+								<img src="./assets/img/buttons/call.svg" alt="">
+								Позвонить
+							</a>
+						</div>
+					</section>
+					<section>
+						<div class="block__content content-block popup-deep popup-form">
+							<div class="popup__close">
+								<svg width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M0.75 0.75L8.74779 8.75008M8.74779 8.75008L16.7452 16.7497M8.74779 8.75008L16.7456 0.75M8.74779 8.75008L0.750421 16.7497" stroke-width="1.5" stroke-linecap="round" stroke="#13A9F4"></path>
+								</svg>
+							</div>
+							<h3 class="popup-deep subtitle subtitle_mini">Узнать глубину и стоимость для моего участка</h3>
+							<p class="popup-deep__text">
+								Узнайте населённый пункт — покажем глубину, варианты и ориентировочную стоимость.
+							</p>
+							<form id="popup-location" class="content-block__form form" action="">
+								<input class="form__input" type="text" name="popup-location-input" placeholder="Введите населённый пункт или адрес">
+								<button class="form__button link" type="submit">Показать результат</button>
+							</form>
+							<div class="content-calculation__advantages specifications-main advantages-calculation">
+								<div class="specifications-main__item">
+									<img class="advantages-calculation__img" src="./assets/img/calculation/no-phone.svg" alt="Без телефона">
+									<p class="advantages-calculation__text">Без телефона на первом шаге</p>
+								</div>
+								<div class="specifications-main__item">
+									<img class="advantages-calculation__img" src="./assets/img/calculation/quick-calculation.svg" alt="Быстрый расчёт">
+									<p class="advantages-calculation__text">Быстрый расчёт за 1 минуту</p>
+								</div>
+								<div class="specifications-main__item">
+									<img class="advantages-calculation__img" src="./assets/img/calculation/actual-data.svg" alt="Актуальные данные">
+									<p class="advantages-calculation__text">Актуальные данные по вашему району</p>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section>
+						<div class="block__content content-block popup-deep popup-consult popup-form">
+							<div class="popup__close">
+								<svg width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M0.75 0.75L8.74779 8.75008M8.74779 8.75008L16.7452 16.7497M8.74779 8.75008L16.7456 0.75M8.74779 8.75008L0.750421 16.7497" stroke-width="1.5" stroke-linecap="round" stroke="#13A9F4"></path>
+								</svg>
+							</div>
+							<h3 class="popup-deep subtitle subtitle_mini">Получить консультацию инженера</h3>
+							<p class="popup-deep__text">Задайте вопрос — ответим подробно, разберём решение для вашего участка.</p>
+							<form id="popup-consult" class="content-block__form form" action="">
+								<!-- Поля ввода -->
+								<div class="popup-smeta__inputs">
+									<input class="form__input" id="engineer-name" type="text" name="name" placeholder="Имя" autocomplete="name" aria-label="Ваше имя">
+									<input class="form__input" id="engineer-phone" type="tel" name="phone" placeholder="Телефон" autocomplete="tel" aria-label="Телефон" required>
+								</div>
+								<!-- Кнопка и согласие -->
+								<button class="form__button link" type="submit">Получить консультацию</button>
+								<label data-fls-checkbox="" class="checkbox">
+									<input checked class="checkbox__input" type="checkbox" value="1" name="privacy" required>
+									<span class="checkbox__text">
+										<span class="checkbox__text-inner">
+											Я ознакомился и принимаю условия
+											<a class="form__text checkbox__link" href="/" target="_blank">Политики конфиденциальности</a>
+										</span>
+									</span>
+								</label>
+							</form>
+						</div>
+					</section>
+				</div>
+			</main>
+			<footer data-fls-footer="" class="footer">
+				<div class="footer__container"></div>
+			</footer>
+		</div>
+	</body>
+</html>
