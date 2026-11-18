@@ -5,8 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
 	<link rel="shortcut icon" href="assets/img/favicon.ico">
-	<title>Бурение скважин на воду в Москве и Московской области по ценам компании AvantiGeo</title>  <script type="module" crossorigin src="./js/index.min.js?v=1794981645011"></script>
-  <link rel="stylesheet" crossorigin href="./css/index.min.css?v=1794981645011">
+	<title>Бурение скважин на воду в Москве и Московской области по ценам компании AvantiGeo</title>  <script type="module" crossorigin src="./js/index.min.js?v=1794983261886"></script>
+  <link rel="stylesheet" crossorigin href="./css/index.min.css?v=1794983261886">
 </head>
 	<body>
 		<div class="wrapper">
@@ -577,7 +577,7 @@
 		</div>
 	</section>
 
-	<section style="display: none;" class="options-section">
+	<section class="options-section">
 		<div class="options-section__container">
 			<div class="options-section__items">
 				<article class="options-section__item option">
@@ -628,188 +628,196 @@
 	</section>
 
 	<section>
-		<div class="block__content content-block popup-smeta popup-form">
-			<h3 class="popup-smeta__title subtitle subtitle_mini">Получите точную смету и срок выполнения работ</h3>
-			<div class="content-block__specifications specifications-main">
-				<div class="specifications-main__item">
-					<div class="specifications-main__img">
-						<img src="./assets/img/main-bur/check.svg" alt="Регион">
+		<div class="popup__container">
+			<div class="block__content content-block popup-smeta popup-form">
+				<h3 class="popup-smeta__title subtitle subtitle_mini">Получите точную смету и срок выполнения работ</h3>
+				<div class="content-block__specifications specifications-main">
+					<div class="specifications-main__item">
+						<div class="specifications-main__img">
+							<img src="./assets/img/main-bur/check.svg" alt="Регион">
+						</div>
+						<div class="specifications-main__group">
+							<p class="specifications-main__title">Регион</p>
+							<p class="specifications-main__text">Московская область, Одинцовский район</p>
+						</div>
 					</div>
-					<div class="specifications-main__group">
-						<p class="specifications-main__title">Регион</p>
-						<p class="specifications-main__text">Московская область, Одинцовский район</p>
+					<div class="specifications-main__item">
+						<div class="specifications-main__img">
+							<img src="./assets/img/main-bur/check.svg" alt=" Глубина">
+						</div>
+						<div class="specifications-main__group">
+							<p class="specifications-main__title">Глубина</p>
+							<p class="specifications-main__text">40-70 м</p>
+						</div>
 					</div>
-				</div>
-				<div class="specifications-main__item">
-					<div class="specifications-main__img">
-						<img src="./assets/img/main-bur/check.svg" alt=" Глубина">
+					<div class="specifications-main__item">
+						<div class="specifications-main__img">
+							<img src="./assets/img/main-bur/check.svg" alt=" Выбранная комплектация">
+						</div>
+						<div class="specifications-main__group">
+							<p class="specifications-main__title">Выбранная комплектация:</p>
+							<p class="specifications-main__text">Бурение + кессон</p>
+						</div>
 					</div>
-					<div class="specifications-main__group">
-						<p class="specifications-main__title">Глубина</p>
-						<p class="specifications-main__text">40-70 м</p>
-					</div>
-				</div>
-				<div class="specifications-main__item">
-					<div class="specifications-main__img">
-						<img src="./assets/img/main-bur/check.svg" alt=" Выбранная комплектация">
-					</div>
-					<div class="specifications-main__group">
-						<p class="specifications-main__title">Выбранная комплектация:</p>
-						<p class="specifications-main__text">Бурение + кессон</p>
-					</div>
-				</div>
-				<div class="specifications-main__item">
-					<div class="specifications-main__img">
-						<img src="./assets/img/main-bur/check.svg" alt=" Стоимость">
-					</div>
-					<div class="specifications-main__group">
-						<p class="specifications-main__title">Стоимость:</p>
-						<p class="specifications-main__text">от 140 000 ₽</p>
-					</div>
-				</div>
-			</div>
-			<form id="form-smeta" class="content-block__form form" action="" method="post">
-				<!-- Поля ввода -->
-				<div class="popup-smeta__inputs">
-					<input class="form__input" id="smeta-name" type="text" name="name" placeholder="Ваше имя" autocomplete="name" aria-label="Ваше имя">
-
-					<input class="form__input" id="smeta-phone" type="tel" name="phone" placeholder="Ваш телефон" autocomplete="tel" aria-label="Ваш телефон" required="">
-				</div>
-
-				<!-- Способ связи -->
-				<fieldset class="form__option-item">
-					<div data-fls-radio="" class="options">
-						<label class="options__item">
-							<input class="options__input" type="radio" value="call" name="option">
-							<span class="options__text"> Позвонить </span>
-						</label>
-						<label class="options__item">
-							<input class="options__input" type="radio" value="whatsapp" name="option" checked="">
-							<span class="options__text"> Написать в WhatsApp </span>
-						</label>
-					</div>
-				</fieldset>
-
-				<!-- Скрытые данные расчёта -->
-				<input type="hidden" name="region" value="Московская область, Одинцовский район">
-				<input type="hidden" name="depth" value="40–70 м">
-				<input type="hidden" name="configuration" value="Бурение + кессон">
-				<input type="hidden" name="cost" value="от 140 000 ₽">
-
-				<!-- Кнопка и согласие -->
-				<div class="form__bottom">
-					<button class="form__button link" type="submit">Получить точную смету и срок работ</button>
-
-					<label data-fls-checkbox="" class="checkbox">
-						<input checked="" class="checkbox__input" type="checkbox" value="1" name="privacy" required="">
-
-						<span class="checkbox__text">
-							<span class="checkbox__text-inner">
-								Я ознакомился и принимаю условия
-								<a class="form__text checkbox__link" href="/" target="_blank"> Политики конфиденциальности </a>
-							</span>
-						</span>
-					</label>
-				</div>
-			</form>
-		</div>
-	</section>
-
-	<section>
-		<div class="block__content content-block popup-parameters popup-form">
-			<div class="popup__close">
-				<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path d="M0.75 0.75L8.74779 8.75008M8.74779 8.75008L16.7452 16.7497M8.74779 8.75008L16.7456 0.75M8.74779 8.75008L0.750421 16.7497" stroke-width="1.5" stroke-linecap="round" stroke="#13A9F4"></path>
-				</svg>
-			</div>
-			<h3 class="popup-parameters__title subtitle subtitle_mini">Проверьте данные и отправьте заявку</h3>
-			<form id="form-parameters" class="content-block__form" action="" method="post">
-				<div class="popup-parameters__column">
-					<h4 class="popup-parameters__subtitle subtitle">Ваши параметры</h4>
-					<div class="popup-parameters__item">
-						<p class="specifications-main__title">Регион</p>
-						<p class="specifications-main__text">Московская область, Одинцовский район</p>
-					</div>
-					<div class="popup-parameters__item">
-						<p class="specifications-main__title">Глубина</p>
-						<p class="specifications-main__text">40–70 м</p>
-					</div>
-					<div class="popup-parameters__item">
-						<p class="specifications-main__title">Конфигурация</p>
-						<p class="specifications-main__text">Бурение + кессон</p>
-					</div>
-					<div class="popup-parameters__item">
-						<p class="specifications-main__title">Стоимость</p>
-						<p class="specifications-main__text">от 140 000 ₽</p>
+					<div class="specifications-main__item">
+						<div class="specifications-main__img">
+							<img src="./assets/img/main-bur/check.svg" alt=" Стоимость">
+						</div>
+						<div class="specifications-main__group">
+							<p class="specifications-main__title">Стоимость:</p>
+							<p class="specifications-main__text">от 140 000 ₽</p>
+						</div>
 					</div>
 				</div>
-				<div class="popup-parameters__column">
-					<div class="popup-parameters__block">
-						<h4 class="popup-parameters__subtitle subtitle">Что будет дальше?</h4>
-						<ol class="popup-parameters__list">
-							<li class="popup-parameters__item">Инженер свяжется с вами в течение 15 минут</li>
-							<li class="popup-parameters__item">Уточнит детали участка и подберёт оптимальное решение</li>
-							<li class="popup-parameters__item">Подготовим точную смету и сроки выполнения работ</li>
-						</ol>
-					</div>
-					<button class="popup-parameters__button link link_w100" type="submit">Рассчитать стоимость</button>
-				</div>
-			</form>
-		</div>
-	</section>
-
-	<section>
-		<div class="block__content content-block popup-success popup-form">
-			<div class="popup__close">
-				<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path d="M0.75 0.75L8.74779 8.75008M8.74779 8.75008L16.7452 16.7497M8.74779 8.75008L16.7456 0.75M8.74779 8.75008L0.750421 16.7497" stroke-width="1.5" stroke-linecap="round" stroke="#13A9F4"></path>
-				</svg>
-			</div>
-			<h3 class="popup-success__title subtitle subtitle_mini">Заявка отправлена</h3>
-			<p class="popup-success__text">
-				Инженер свяжется с вами в течение 15 минут и уточнит детали для подготовки точной
-			</p>
-		</div>
-	</section>
-
-	<section>
-		<div class="block__content content-block popup-engineer popup-form">
-			<div class="popup-engineer__block">
-				<h3 class="popup-smeta__title subtitle subtitle_mini">Поговорить с инженером</h3>
-
-				<form id="form-engineer" class="content-block__form form" action="" method="post">
+				<form id="form-smeta" class="content-block__form form" action="" method="post">
 					<!-- Поля ввода -->
 					<div class="popup-smeta__inputs">
-						<input class="form__input" id="engineer-name" type="text" name="name" placeholder="Имя" autocomplete="name" aria-label="Ваше имя">
+						<input class="form__input" id="smeta-name" type="text" name="name" placeholder="Ваше имя" autocomplete="name" aria-label="Ваше имя">
 
-						<input class="form__input" id="engineer-phone" type="tel" name="phone" placeholder="Телефон" autocomplete="tel" aria-label="Телефон" required="">
+						<input class="form__input" id="smeta-phone" type="tel" name="phone" placeholder="Ваш телефон" autocomplete="tel" aria-label="Ваш телефон" required="">
 					</div>
 
-					<!-- Кнопка и согласие -->
-					<button class="form__button link link_w100" type="submit">Получить консультацию</button>
+					<!-- Способ связи -->
+					<fieldset class="form__option-item">
+						<div data-fls-radio="" class="options">
+							<label class="options__item">
+								<input class="options__input" type="radio" value="call" name="option">
+								<span class="options__text"> Позвонить </span>
+							</label>
+							<label class="options__item">
+								<input class="options__input" type="radio" value="whatsapp" name="option" checked="">
+								<span class="options__text"> Написать в WhatsApp </span>
+							</label>
+						</div>
+					</fieldset>
 
-					<label data-fls-checkbox="" class="checkbox">
-						<input checked="" class="checkbox__input" type="checkbox" value="1" name="privacy" required="">
-						<span class="checkbox__text">
-							<span class="checkbox__text-inner">
-								Я ознакомился и принимаю условия
-								<a class="form__text checkbox__link" href="/" target="_blank"> Политики конфиденциальности </a>
+					<!-- Скрытые данные расчёта -->
+					<input type="hidden" name="region" value="Московская область, Одинцовский район">
+					<input type="hidden" name="depth" value="40–70 м">
+					<input type="hidden" name="configuration" value="Бурение + кессон">
+					<input type="hidden" name="cost" value="от 140 000 ₽">
+
+					<!-- Кнопка и согласие -->
+					<div class="form__bottom">
+						<button class="form__button link" type="submit">Получить точную смету и срок работ</button>
+
+						<label data-fls-checkbox="" class="checkbox">
+							<input checked="" class="checkbox__input" type="checkbox" value="1" name="privacy" required="">
+
+							<span class="checkbox__text">
+								<span class="checkbox__text-inner">
+									Я ознакомился и принимаю условия
+									<a class="form__text checkbox__link" href="/" target="_blank"> Политики конфиденциальности </a>
+								</span>
 							</span>
-						</span>
-					</label>
+						</label>
+					</div>
 				</form>
 			</div>
-			<div class="popup-engineer__block popup-engineer__block_right">
-				<h4 class="popup-parameters__subtitle subtitle">Что будет дальше?</h4>
-				<ul class="popup-engineer__list">
-					<li>без предоплаты</li>
-					<li>договор</li>
-					<li>гарантия</li>
-					<li>собственная техника</li>
-					<li>ссылка на документы</li>
-					<li>1–2 релевантных кейса</li>
-				</ul>
-				<a class="popup-engineer__link link link_mini" href="/">Посмотреть документы</a>
+		</div>
+	</section>
+
+	<section>
+		<div class="popup__container">
+			<div class="block__content content-block popup-parameters popup-form">
+				<div class="popup__close">
+					<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M0.75 0.75L8.74779 8.75008M8.74779 8.75008L16.7452 16.7497M8.74779 8.75008L16.7456 0.75M8.74779 8.75008L0.750421 16.7497" stroke-width="1.5" stroke-linecap="round" stroke="#13A9F4"></path>
+					</svg>
+				</div>
+				<h3 class="popup-parameters__title subtitle subtitle_mini">Проверьте данные и отправьте заявку</h3>
+				<form id="form-parameters" class="content-block__form" action="" method="post">
+					<div class="popup-parameters__column">
+						<h4 class="popup-parameters__subtitle subtitle">Ваши параметры</h4>
+						<div class="popup-parameters__item">
+							<p class="specifications-main__title">Регион</p>
+							<p class="specifications-main__text">Московская область, Одинцовский район</p>
+						</div>
+						<div class="popup-parameters__item">
+							<p class="specifications-main__title">Глубина</p>
+							<p class="specifications-main__text">40–70 м</p>
+						</div>
+						<div class="popup-parameters__item">
+							<p class="specifications-main__title">Конфигурация</p>
+							<p class="specifications-main__text">Бурение + кессон</p>
+						</div>
+						<div class="popup-parameters__item">
+							<p class="specifications-main__title">Стоимость</p>
+							<p class="specifications-main__text">от 140 000 ₽</p>
+						</div>
+					</div>
+					<div class="popup-parameters__column">
+						<div class="popup-parameters__block">
+							<h4 class="popup-parameters__subtitle subtitle">Что будет дальше?</h4>
+							<ol class="popup-parameters__list">
+								<li class="popup-parameters__item">Инженер свяжется с вами в течение 15 минут</li>
+								<li class="popup-parameters__item">Уточнит детали участка и подберёт оптимальное решение</li>
+								<li class="popup-parameters__item">Подготовим точную смету и сроки выполнения работ</li>
+							</ol>
+						</div>
+						<button class="popup-parameters__button link link_w100" type="submit">Рассчитать стоимость</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div class="popup__container">
+			<div class="block__content content-block popup-success popup-form">
+				<div class="popup__close">
+					<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M0.75 0.75L8.74779 8.75008M8.74779 8.75008L16.7452 16.7497M8.74779 8.75008L16.7456 0.75M8.74779 8.75008L0.750421 16.7497" stroke-width="1.5" stroke-linecap="round" stroke="#13A9F4"></path>
+					</svg>
+				</div>
+				<h3 class="popup-success__title subtitle subtitle_mini">Заявка отправлена</h3>
+				<p class="popup-success__text">
+					Инженер свяжется с вами в течение 15 минут и уточнит детали для подготовки точной
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div class="popup__container">
+			<div class="block__content content-block popup-engineer popup-form">
+				<div class="popup-engineer__block">
+					<h3 class="popup-smeta__title subtitle subtitle_mini">Поговорить с инженером</h3>
+
+					<form id="form-engineer" class="content-block__form form" action="" method="post">
+						<!-- Поля ввода -->
+						<div class="popup-smeta__inputs">
+							<input class="form__input" id="engineer-name" type="text" name="name" placeholder="Имя" autocomplete="name" aria-label="Ваше имя">
+
+							<input class="form__input" id="engineer-phone" type="tel" name="phone" placeholder="Телефон" autocomplete="tel" aria-label="Телефон" required="">
+						</div>
+
+						<!-- Кнопка и согласие -->
+						<button class="form__button link link_w100" type="submit">Получить консультацию</button>
+
+						<label data-fls-checkbox="" class="checkbox">
+							<input checked="" class="checkbox__input" type="checkbox" value="1" name="privacy" required="">
+							<span class="checkbox__text">
+								<span class="checkbox__text-inner">
+									Я ознакомился и принимаю условия
+									<a class="form__text checkbox__link" href="/" target="_blank"> Политики конфиденциальности </a>
+								</span>
+							</span>
+						</label>
+					</form>
+				</div>
+				<div class="popup-engineer__block popup-engineer__block_right">
+					<h4 class="popup-parameters__subtitle subtitle">Что будет дальше?</h4>
+					<ul class="popup-engineer__list">
+						<li>без предоплаты</li>
+						<li>договор</li>
+						<li>гарантия</li>
+						<li>собственная техника</li>
+						<li>ссылка на документы</li>
+						<li>1–2 релевантных кейса</li>
+					</ul>
+					<a class="popup-engineer__link link link_mini" href="/">Посмотреть документы</a>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -827,69 +835,73 @@
 	</section>
 
 	<section>
-		<div class="block__content content-block popup-deep popup-form">
-			<div class="popup__close">
-				<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path d="M0.75 0.75L8.74779 8.75008M8.74779 8.75008L16.7452 16.7497M8.74779 8.75008L16.7456 0.75M8.74779 8.75008L0.750421 16.7497" stroke-width="1.5" stroke-linecap="round" stroke="#13A9F4"></path>
-				</svg>
-			</div>
-			<h3 class="popup-deep subtitle subtitle_mini">Узнать глубину и стоимость для моего участка</h3>
-			<p class="popup-deep__text">
-				Узнайте населённый пункт — покажем глубину, варианты и ориентировочную стоимость.
-			</p>
-			<form id="popup-location" class="content-block__form form" action="">
-				<input class="form__input" type="text" name="popup-location-input" placeholder="Введите населённый пункт или адрес">
-				<button class="form__button link" type="submit">Показать результат</button>
-			</form>
-			<div class="content-calculation__advantages specifications-main advantages-calculation">
-				<div class="specifications-main__item">
-					<img class="advantages-calculation__img" src="./assets/img/calculation/no-phone.svg" alt="Без телефона">
-					<p class="advantages-calculation__text">Без телефона на первом шаге</p>
+		<div class="popup__container">
+			<div class="block__content content-block popup-deep popup-form">
+				<div class="popup__close">
+					<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M0.75 0.75L8.74779 8.75008M8.74779 8.75008L16.7452 16.7497M8.74779 8.75008L16.7456 0.75M8.74779 8.75008L0.750421 16.7497" stroke-width="1.5" stroke-linecap="round" stroke="#13A9F4"></path>
+					</svg>
 				</div>
+				<h3 class="popup-deep subtitle subtitle_mini">Узнать глубину и стоимость для моего участка</h3>
+				<p class="popup-deep__text">
+					Узнайте населённый пункт — покажем глубину, варианты и ориентировочную стоимость.
+				</p>
+				<form id="popup-location" class="content-block__form form" action="">
+					<input class="form__input" type="text" name="popup-location-input" placeholder="Введите населённый пункт или адрес">
+					<button class="form__button link" type="submit">Показать результат</button>
+				</form>
+				<div class="content-calculation__advantages specifications-main advantages-calculation">
+					<div class="specifications-main__item">
+						<img class="advantages-calculation__img" src="./assets/img/calculation/no-phone.svg" alt="Без телефона">
+						<p class="advantages-calculation__text">Без телефона на первом шаге</p>
+					</div>
 
-				<div class="specifications-main__item">
-					<img class="advantages-calculation__img" src="./assets/img/calculation/quick-calculation.svg" alt="Быстрый расчёт">
-					<p class="advantages-calculation__text">Быстрый расчёт за 1 минуту</p>
-				</div>
+					<div class="specifications-main__item">
+						<img class="advantages-calculation__img" src="./assets/img/calculation/quick-calculation.svg" alt="Быстрый расчёт">
+						<p class="advantages-calculation__text">Быстрый расчёт за 1 минуту</p>
+					</div>
 
-				<div class="specifications-main__item">
-					<img class="advantages-calculation__img" src="./assets/img/calculation/actual-data.svg" alt="Актуальные данные">
-					<p class="advantages-calculation__text">Актуальные данные по вашему району</p>
+					<div class="specifications-main__item">
+						<img class="advantages-calculation__img" src="./assets/img/calculation/actual-data.svg" alt="Актуальные данные">
+						<p class="advantages-calculation__text">Актуальные данные по вашему району</p>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
 	<section>
-		<div class="block__content content-block popup-deep popup-consult popup-form">
-			<div class="popup__close">
-				<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path d="M0.75 0.75L8.74779 8.75008M8.74779 8.75008L16.7452 16.7497M8.74779 8.75008L16.7456 0.75M8.74779 8.75008L0.750421 16.7497" stroke-width="1.5" stroke-linecap="round" stroke="#13A9F4"></path>
-				</svg>
-			</div>
-			<h3 class="popup-deep subtitle subtitle_mini">Получить консультацию инженера</h3>
-			<p class="popup-deep__text">Задайте вопрос — ответим подробно, разберём решение для вашего участка.</p>
-			<form id="popup-consult" class="content-block__form form" action="">
-				<!-- Поля ввода -->
-				<div class="popup-smeta__inputs">
-					<input class="form__input" id="engineer-name" type="text" name="name" placeholder="Имя" autocomplete="name" aria-label="Ваше имя">
-
-					<input class="form__input" id="engineer-phone" type="tel" name="phone" placeholder="Телефон" autocomplete="tel" aria-label="Телефон" required="">
+		<div class="popup__container">
+			<div class="block__content content-block popup-deep popup-consult popup-form">
+				<div class="popup__close">
+					<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M0.75 0.75L8.74779 8.75008M8.74779 8.75008L16.7452 16.7497M8.74779 8.75008L16.7456 0.75M8.74779 8.75008L0.750421 16.7497" stroke-width="1.5" stroke-linecap="round" stroke="#13A9F4"></path>
+					</svg>
 				</div>
+				<h3 class="popup-deep subtitle subtitle_mini">Получить консультацию инженера</h3>
+				<p class="popup-deep__text">Задайте вопрос — ответим подробно, разберём решение для вашего участка.</p>
+				<form id="popup-consult" class="content-block__form form" action="">
+					<!-- Поля ввода -->
+					<div class="popup-smeta__inputs">
+						<input class="form__input" id="engineer-name" type="text" name="name" placeholder="Имя" autocomplete="name" aria-label="Ваше имя">
 
-				<!-- Кнопка и согласие -->
-				<button class="form__button link" type="submit">Получить консультацию</button>
+						<input class="form__input" id="engineer-phone" type="tel" name="phone" placeholder="Телефон" autocomplete="tel" aria-label="Телефон" required="">
+					</div>
 
-				<label data-fls-checkbox="" class="checkbox">
-					<input checked="" class="checkbox__input" type="checkbox" value="1" name="privacy" required="">
-					<span class="checkbox__text">
-						<span class="checkbox__text-inner">
-							Я ознакомился и принимаю условия
-							<a class="form__text checkbox__link" href="/" target="_blank"> Политики конфиденциальности </a>
+					<!-- Кнопка и согласие -->
+					<button class="form__button link" type="submit">Получить консультацию</button>
+
+					<label data-fls-checkbox="" class="checkbox">
+						<input checked="" class="checkbox__input" type="checkbox" value="1" name="privacy" required="">
+						<span class="checkbox__text">
+							<span class="checkbox__text-inner">
+								Я ознакомился и принимаю условия
+								<a class="form__text checkbox__link" href="/" target="_blank"> Политики конфиденциальности </a>
+							</span>
 						</span>
-					</span>
-				</label>
-			</form>
+					</label>
+				</form>
+			</div>
 		</div>
 	</section>
 </div>
