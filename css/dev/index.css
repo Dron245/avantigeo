@@ -366,7 +366,11 @@ section:not(:last-child) {
 .form-calculation__input {
   width: 100%;
 }
+.form-calculation__button {
+  min-width: 11.9375rem;
+}
 .form-calculation__button_change {
+  min-width: initial;
   font-family: "Manrope", sans-serif;
   font-weight: 600;
   font-size: 1rem;

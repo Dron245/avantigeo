@@ -31,6 +31,22 @@
 // src/components/pages/index/index.js
 (() => {
 	const section = document.querySelector(".calculation");
+	function initPhoneMask() {
+		document.querySelectorAll("input[type=\"tel\"]").forEach((input) => {
+			input.addEventListener("input", () => {
+				let digits = input.value.replace(/\D/g, "");
+				if (digits.startsWith("7") || digits.startsWith("8")) digits = digits.slice(1);
+				digits = digits.slice(0, 10);
+				let formatted = "+7";
+				if (digits.length > 0) formatted += " (" + digits.slice(0, 3);
+				if (digits.length >= 4) formatted += ") " + digits.slice(3, 6);
+				if (digits.length >= 7) formatted += "-" + digits.slice(6, 8);
+				if (digits.length >= 9) formatted += "-" + digits.slice(8, 10);
+				input.value = formatted;
+			});
+		});
+	}
+	initPhoneMask();
 	if (!section) return;
 	const form = section.querySelector("#location-calculation");
 	const input = section.querySelector("#location-input");
